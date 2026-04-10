@@ -1,0 +1,67 @@
+:root {
+  /* BACKGROUND */
+  --bg-main: hsl(30, 54%, 90%);
+  --bg-card: hsl(0, 0%, 100%);
+  --bg-prep: hsl(330, 100%, 98%);
+
+  /* TEXT */
+  --text-body: hsl(30, 10%, 34%);
+  --text-heading: hsl(14, 45%, 36%);
+  --text-heading-main: hsl(24, 5%, 18%);
+  --text-prep: hsl(332, 51%, 32%);
+
+  /* BORDERS */
+  --border-color: hsl(30, 18%, 87%);
+}
+
+@font-face{
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 100 900;
+}
+
+@font-face{
+  font-family: "YoungSerif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+}
+/* ====================
+        RESET
+==================== */
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ====================
+         BASE 
+==================== */
+body{
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card{
+  background-color: var(--bg-card);
+  justify-content: center;
+  max-width: 40rem;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  gap: 1.5rem;
+  
+}
+
+.recipe-image{
+  width: 100%;
+  border-radius: 0.75rem;
+  display: block;
+  max-width:100%;
+}
