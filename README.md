@@ -10,7 +10,7 @@ This is a solution to the Recipe page challenge from  Frontend Mentor. The goal 
 ## 🔗 Links
 
 * Solution URL: https://www.frontendmentor.io/profile/lidianofeliciobr
-* Live Site URL: 
+* Live Site URL: https://lihsousa.github.io/recipe-page/
 
 ---
 

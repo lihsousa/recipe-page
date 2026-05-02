@@ -25,6 +25,7 @@
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
   font-weight: 400;
 }
+
 /* ====================
         RESET
 ==================== */
@@ -38,6 +39,7 @@
 /* ====================
          BASE 
 ==================== */
+
 body{
   font-family: "Outfit", sans-serif;
   background-color: var(--bg-main);
@@ -45,15 +47,21 @@ body{
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
-  padding: 3rem 1rem 1rem;
-  
-  
+
+  /* RESPONSIVO */
+  padding: clamp(1rem, 5vw, 3rem) 1rem 1rem;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .card{
   background-color: var(--bg-card);
   max-width: 40rem;
+  width: 100%;
   border-radius: 0.75rem; 
   padding: 2rem;
   display: flex;
@@ -64,88 +72,102 @@ body{
 .recipe-image{
   width: 100%;
   display: block;
-  max-width:100%;
   border-radius: 0.75rem;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
-
-
 
 .card p{
   font-size: 1rem;
-  text-align:left;
   line-height: 1.6;
   color: var(--text-body);
-
 }
+
+/* ====================
+      HEADINGS
+==================== */
 
 h1, h2{
   font-family: "Youngserif", serif;
-
 }
 
 h2{
   color: var(--text-heading);
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
+
+/* ====================
+     PREP TIME
+==================== */
+
 .prep-time{
-  background-color: var(--bg-prep) ;
+  background-color: var(--bg-prep);
   border-radius: 0.75rem;
-  padding:1rem;
+  padding: 1rem;
 }
 
 .prep-time h2{
   font-size: 1rem;
   color: var(--text-prep);
-  font-weight:700;
-  margin-bottom: 0.75rem;
- 
+  font-weight: 700;
+  margin-block-end: 0.75rem;
 }
 
 .prep-time ul{
   font-size: 0.9rem;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
   color: var(--text-body);
 }
 
 .prep-time li{
-  margin-bottom: 0.5rem;
-  padding-left: 0.5rem;
+  margin-block-end: 0.5rem;
+  padding-inline-start: 0.5rem;
 }
 
 .prep-time strong{
   color: var(--text-heading-main);
 }
 
+/* ====================
+     INGREDIENTS
+==================== */
+
 .ingredients ul {
-   font-size: 0.9rem;
-  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  padding-inline-start: 1.5rem;
   color: var(--text-body);
 }
 
 .ingredients li {
-  margin-bottom: 0.5rem ;
-  padding-left: 0.5rem;
+  margin-block-end: 0.5rem;
+  padding-inline-start: 0.5rem;
 }
+
+/* ====================
+     SECTIONS
+==================== */
 
 section{
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 1.5rem;
+  padding-block-end: 1.5rem;
 }
 
 section:last-child {
   border-bottom: none;
 }
 
+/* ====================
+     INSTRUCTIONS
+==================== */
+
 .instructions ol {
   font-size: 0.9rem;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
   color: var(--text-body);
 }
 
 .instructions li {
-  margin-bottom: 0.5rem ;
-  padding-left: 0.5rem;
+  margin-block-end: 0.5rem;
+  padding-inline-start: 0.5rem;
   line-height: 1.6;
 }
 
@@ -158,18 +180,21 @@ section:last-child {
   color: var(--text-heading-main);
 }
 
+/* ====================
+     NUTRITION
+==================== */
 
 .nutrition p{
   font-size: 0.9rem;
 }
+
 .nutrition table{
   width: 100%;
   border-collapse: collapse;
-  
 }
 
 .nutrition tr{
-  border-bottom: 1px solid var(--border-color) ;
+  border-bottom: 1px solid var(--border-color);
   font-size: 0.9rem;
 }
 
@@ -180,14 +205,12 @@ section:last-child {
 .nutrition th{
   text-align: left;
   font-weight: 400;
-   color: var(--text-body)
-
+  color: var(--text-body);
 }
 
 .nutrition td{
   font-weight: 700;
   color: var(--text-heading);
-  
 }
 
 .nutrition th,
@@ -195,11 +218,13 @@ section:last-child {
   padding: 0.75rem 1rem;
 }
 
+/* ====================
+     FOOTER
+==================== */
 
 .attribution {
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-body);
-  margin-top: 2rem;
+  margin-block-start: 2rem;
 }
-
