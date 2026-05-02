@@ -21,7 +21,7 @@
 }
 
 @font-face{
-  font-family: "YoungSerif";
+  font-family: "Youngserif";
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
   font-weight: 400;
 }
@@ -44,24 +44,162 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: center;
   align-items: center;
+  padding: 3rem 1rem 1rem;
+  
   
 }
 
+
 .card{
   background-color: var(--bg-card);
-  justify-content: center;
   max-width: 40rem;
+  border-radius: 0.75rem; 
   padding: 2rem;
-  border-radius: 0.75rem;
-  gap: 1.5rem;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .recipe-image{
   width: 100%;
-  border-radius: 0.75rem;
   display: block;
   max-width:100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
 }
+
+
+
+.card p{
+  font-size: 1rem;
+  text-align:left;
+  line-height: 1.6;
+  color: var(--text-body);
+
+}
+
+h1, h2{
+  font-family: "Youngserif", serif;
+
+}
+
+h2{
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+}
+.prep-time{
+  background-color: var(--bg-prep) ;
+  border-radius: 0.75rem;
+  padding:1rem;
+}
+
+.prep-time h2{
+  font-size: 1rem;
+  color: var(--text-prep);
+  font-weight:700;
+  margin-bottom: 0.75rem;
+ 
+}
+
+.prep-time ul{
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
+  color: var(--text-body);
+}
+
+.prep-time li{
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.prep-time strong{
+  color: var(--text-heading-main);
+}
+
+.ingredients ul {
+   font-size: 0.9rem;
+  padding-left: 1.5rem;
+  color: var(--text-body);
+}
+
+.ingredients li {
+  margin-bottom: 0.5rem ;
+  padding-left: 0.5rem;
+}
+
+section{
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.instructions ol {
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
+  color: var(--text-body);
+}
+
+.instructions li {
+  margin-bottom: 0.5rem ;
+  padding-left: 0.5rem;
+  line-height: 1.6;
+}
+
+.instructions li::marker{
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+.instructions strong{
+  color: var(--text-heading-main);
+}
+
+
+.nutrition p{
+  font-size: 0.9rem;
+}
+.nutrition table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.nutrition tr{
+  border-bottom: 1px solid var(--border-color) ;
+  font-size: 0.9rem;
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition th{
+  text-align: left;
+  font-weight: 400;
+   color: var(--text-body)
+
+}
+
+.nutrition td{
+  font-weight: 700;
+  color: var(--text-heading);
+  
+}
+
+.nutrition th,
+.nutrition td {
+  padding: 0.75rem 1rem;
+}
+
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-body);
+  margin-top: 2rem;
+}
+
