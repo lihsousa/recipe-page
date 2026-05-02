@@ -1,7 +1,7 @@
 # Frontend Mentor - Recipe page
 
 ## 📸 Screenshot
-![Project view] (.assets/images/screenshot.png)
+![Project view] (./assets/images/screenshot.png)
 
 This is a solution to the Recipe page challenge from  Frontend Mentor. The goal of this project was to build a responsive recipe page using semantic HTML and modern CSS techniques.
 
